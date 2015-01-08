@@ -60,7 +60,7 @@
 						this.cfg.thumbnail = 100;
 					}
 					if(!this.cfg.height){
-						this.cfg.height = 390;
+						this.cfg.height = 300;
 					}
 					if(!this.cfg.width){
 						this.cfg.width = 400;
@@ -82,17 +82,7 @@
 						break;
 					}
 						
-					//what data do we need: a search, a user search, a playlist
-					switch(this.cfg.type){
-						case "search":
-						script.setAttribute('src', 'http://gdata.youtube.com/feeds/api/videos?q='+this.cfg.q+'&v=2&format=5&start-index='+this.cfg.start+'&max-results='+this.cfg.results+'&alt=jsonc&callback=ytEmbed.callback['+this.ytQuery+']&orderby='+this.cfg.orderby+'&sortorder='+this.cfg.sortorder);
-						break;
-				
-						case "user":
-						script.setAttribute('src', 'http://gdata.youtube.com/feeds/api/users/'+this.cfg.q+'/uploads?max-results='+this.cfg.results+'&start-index='+this.cfg.start+'&alt=jsonc&v=2&format=5&callback=ytEmbed.callback['+this.ytQuery+']&orderby='+this.cfg.orderby+'&sortorder='+this.cfg.sortorder);
-						break;
-						
-						case "playlist":
+
 						///snippets?q=
 						script.setAttribute('src', 'http://gdata.youtube.com/feeds/api/playlists/'+this.cfg.q+'?max-results='+this.cfg.results+'&start-index='+this.cfg.start+'&alt=jsonc&v=2&format=5&callback=ytEmbed.callback['+this.ytQuery+']&sortorder='+this.cfg.sortorder);
 						break;
