@@ -63,7 +63,7 @@
 						this.cfg.height = 390;
 					}
 					if(!this.cfg.width){
-						this.cfg.width = 640;
+						this.cfg.width = 400;
 					}						
 					switch(this.cfg.order){
 						case "new_first":
