@@ -57,7 +57,7 @@
 						this.cfg.sortorder = 'descending';
 					}
 					if(!this.cfg.thumbnail){
-						this.cfg.thumbnail = 200;
+						this.cfg.thumbnail = 100;
 					}
 					if(!this.cfg.height){
 						this.cfg.height = 390;
